@@ -17,7 +17,7 @@ Getting Started
 composer require laravel/passport
 ```
 
-open config/app.php file and add service provider.
+# open config/app.php file and add service provider.
 config/app.php
 'providers' =>[
 Laravel\Passport\PassportServiceProvider::class,

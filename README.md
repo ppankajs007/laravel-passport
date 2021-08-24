@@ -25,7 +25,7 @@ php artisan migrate
 php artisan passport:install
 # Step 3: Passport Configuration app/User.php
 
-php
+```php
 
 namespace App;
 use Laravel\Passport\HasApiTokens;

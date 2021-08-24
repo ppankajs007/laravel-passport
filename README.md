@@ -52,7 +52,8 @@ protected $hidden = [
 ];
 }
 
-app/Providers/AuthServiceProvider.php
+```
+# app/Providers/AuthServiceProvider.php
 
 ```php
 
@@ -82,6 +83,8 @@ class AuthServiceProvider extends ServiceProvider
     } 
 }
 
+```
+
 # Step 4 :config/auth.php
 
 ```php
@@ -97,6 +100,8 @@ return [
             'provider' => 'users', 
         ], 
     ],
+
+```
 
 # Step 5: Create API Route
 
@@ -118,6 +123,7 @@ Route::group(['middleware' => 'auth:api'], function(){
 Route::post('details', 'API\UserController@details');
 });
 
+```
 
 # Step 6: Create the Controller
 
@@ -181,3 +187,5 @@ return response()->json(['success'=>$success], $this-> successStatus);
         return response()->json(['success' => $user], $this-> successStatus); 
     } 
 }
+
+```

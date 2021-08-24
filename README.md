@@ -24,7 +24,9 @@ Laravel\Passport\PassportServiceProvider::class,
 php artisan migrate
 php artisan passport:install
 # Step 3: Passport Configuration app/User.php
-<?php
+
+php
+
 namespace App;
 use Laravel\Passport\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
@@ -52,7 +54,9 @@ protected $hidden = [
 
 app/Providers/AuthServiceProvider.php
 
-<?php
+
+php
+
 namespace App\Providers;
 use Laravel\Passport\Passport; 
 use Illuminate\Support\Facades\Gate; 
@@ -81,7 +85,7 @@ class AuthServiceProvider extends ServiceProvider
 
 # Step 4 :config/auth.php
 
-<?php
+
 return [
 'guards' => [ 
         'web' => [ 
@@ -96,7 +100,7 @@ return [
 
 # Step 5: Create API Route
 
-<?php
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -117,7 +121,7 @@ Route::post('details', 'API\UserController@details');
 # Step 6: Create the Controller
 
 
-<?php
+
 namespace App\Http\Controllers\API;
 use Illuminate\Http\Request; 
 use App\Http\Controllers\Controller; 

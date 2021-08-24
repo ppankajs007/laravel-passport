@@ -54,8 +54,7 @@ protected $hidden = [
 
 app/Providers/AuthServiceProvider.php
 
-
-php
+```php
 
 namespace App\Providers;
 use Laravel\Passport\Passport; 
@@ -85,6 +84,7 @@ class AuthServiceProvider extends ServiceProvider
 
 # Step 4 :config/auth.php
 
+```php
 
 return [
 'guards' => [ 
@@ -100,6 +100,7 @@ return [
 
 # Step 5: Create API Route
 
+```php
 
 /*
 |--------------------------------------------------------------------------
@@ -120,7 +121,7 @@ Route::post('details', 'API\UserController@details');
 
 # Step 6: Create the Controller
 
-
+```php
 
 namespace App\Http\Controllers\API;
 use Illuminate\Http\Request; 

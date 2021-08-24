@@ -12,7 +12,10 @@ Register API
 Details API
 Getting Started
 # Step 1: Install Package
+
+```bash
 composer require laravel/passport
+```
 
 open config/app.php file and add service provider.
 config/app.php
@@ -21,8 +24,13 @@ Laravel\Passport\PassportServiceProvider::class,
 ],
 
 # Step 2: Run Migration and Install
-php artisan migrate
+```bash
 php artisan passport:install
+```
+```bash
+php artisan migrate
+```
+
 # Step 3: Passport Configuration app/User.php
 
 ```php
